@@ -12,9 +12,13 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
+    "axios": "^1.3.5",
+    "axios-cache-interceptor": "^1.0.1",
+    "clsx": "^1.2.1",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "next": "13.3.0",
+    "pokenode-ts": "^1.18.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
