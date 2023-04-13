@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.headerTitle {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #222;
+  line-height: 1.5;
+  display: grid;
+  place-items: center;
+  border-bottom: 8px solid #fec55b;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .headerTitle {
+    font-size: 3rem;
+    border-bottom-width: 16px;
+    padding: 0;
+  }
+}
