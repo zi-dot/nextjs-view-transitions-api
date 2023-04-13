@@ -1,0 +1,30 @@
+.main {
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  height: 100%;
+}
+
+.pokemonList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+  list-style: none;
+  max-width: calc((140px * 3) + (20px * 2));
+}
+
+.pokemonListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    justify-content: center;
+    align-content: center;
+  }
+}
