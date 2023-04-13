@@ -1,3 +1,13 @@
+.pokemonTile {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pokemonTile:hover {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
 .pokemonImageOuter {
   position: relative;
   width: 100px;

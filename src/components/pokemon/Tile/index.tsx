@@ -24,27 +24,29 @@ export const PokemonTile: FC<Props> = ({ no, name, image, types }) => {
         );
       }}
     >
-      <div className={styles.pokemonImageOuter}>
-        <Image
-          src={image}
-          alt={name}
-          className={imageClassName}
-          width="160"
-          height="160"
-        />
+      <div className={styles.pokemonTile}>
+        <div className={styles.pokemonImageOuter}>
+          <Image
+            src={image}
+            alt={name}
+            className={imageClassName}
+            width="160"
+            height="160"
+          />
+        </div>
+        <ul className={styles.pokemonTypes}>
+          {types.map((type) => (
+            <li key={type}>
+              <Image
+                src={`/types/${type}.png`}
+                width="32"
+                height="32"
+                alt={type}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className={styles.pokemonTypes}>
-        {types.map((type) => (
-          <li key={type}>
-            <Image
-              src={`/types/${type}.png`}
-              width="32"
-              height="32"
-              alt={type}
-            />
-          </li>
-        ))}
-      </ul>
     </TransitionLink>
   );
 };
