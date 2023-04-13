@@ -1,0 +1,26 @@
+.prevAndNext {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.prevAndNextButton {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
