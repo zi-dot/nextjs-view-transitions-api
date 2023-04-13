@@ -1,0 +1,19 @@
+.header {
+  view-transition-name: header;
+}
+
+.headerTitle {
+  view-transition-name: header-title;
+}
+
+.pokemonImage {
+  view-transition-name: pokemon-image;
+}
+
+.pokemonDetailPage {
+  view-transition-name: pokemon-detail-page;
+}
+
+.pokemonNextAndPrev {
+  view-transition-name: pokemon-next-and-prev;
+}
