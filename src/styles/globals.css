@@ -1,1 +1,39 @@
+body {
+  background-color: #fceddc;
+}
 
+@keyframes slide-in {
+  from {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes slide-out {
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+::view-transition-old(root) {
+  animation: 100ms linear both fade-out, 300ms linear both slide-out;
+}
+
+::view-transition-new(root) {
+  animation: 100ms linear both fade-in, 300ms linear both slide-in;
+}
+
+a {
+  text-decoration: none;
+}
