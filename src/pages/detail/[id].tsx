@@ -43,8 +43,6 @@ export const getStaticProps: GetStaticProps<{
 
   const prevNo = prevNoIndex >= 0 ? FAVORITE_POKEMON_IDS[prevNoIndex] : null;
 
-  console.log(nextNo, prevNo);
-
   return {
     props: {
       pokemon,

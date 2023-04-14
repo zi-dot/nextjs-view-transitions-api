@@ -1,8 +1,6 @@
 import Image from "next/image";
 import styles from "./index.module.css";
-import { FC, useState } from "react";
-import viewTransitionName from "@/styles/viewTransitionName.module.css";
-import clsx from "clsx";
+import { FC } from "react";
 import { TransitionLink } from "@/components/shared/TransitionLink";
 
 type Props = {
@@ -13,25 +11,19 @@ type Props = {
 };
 
 export const PokemonTile: FC<Props> = ({ no, name, image, types }) => {
-  const [imageClassName, setImageClassName] = useState(styles.pokemonImage);
-
   return (
-    <TransitionLink
-      href={`/detail/${no}`}
-      onClick={() => {
-        setImageClassName(
-          clsx(styles.pokemonImage, viewTransitionName.pokemonImage)
-        );
-      }}
-    >
+    <TransitionLink href={`/detail/${no}`}>
       <div className={styles.pokemonTile}>
         <div className={styles.pokemonImageOuter}>
           <Image
             src={image}
             alt={name}
-            className={imageClassName}
+            className={styles.pokemonImage}
             width="160"
             height="160"
+            style={{
+              viewTransitionName: `pokemon-image-${no}`,
+            }}
           />
         </div>
         <ul className={styles.pokemonTypes}>

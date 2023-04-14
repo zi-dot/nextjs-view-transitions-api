@@ -2,9 +2,6 @@ import Image from "next/image";
 import { FC } from "react";
 import styles from "./index.module.css";
 
-import viewTransitionName from "@/styles/viewTransitionName.module.css";
-import clsx from "clsx";
-
 type Props = {
   no: number;
   name: string;
@@ -28,7 +25,10 @@ export const DetailDescription: FC<Props> = ({
           width="160"
           height="160"
           alt=""
-          className={clsx(viewTransitionName.pokemonImage, styles.pokemonImage)}
+          className={styles.pokemonImage}
+          style={{
+            viewTransitionName: `pokemon-image-${no}`,
+          }}
         />
       </div>
 
